@@ -32,9 +32,11 @@ namespace WpfApp1
             TbResult.IsReadOnly = true;
 
         }
+        //ТОЛЬКО ЦИФРЫ  И ЗАПЯТАЯ
+       
         private void OnPreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            e.Handled = "0123456789 ,".IndexOf(e.Text) < 0;
+            e.Handled = "0123456789,".IndexOf(e.Text) < 0;
         }
         private void BtnCount_Click(object sender, RoutedEventArgs e)
         {

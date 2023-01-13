@@ -20,19 +20,8 @@ namespace WpfApp1
         public static TextBox secomdNum;
         public static TextBox tbResult;
         // блок с бизнес-логикой
-        public static int Count // свойство для отображения числа в TextBlock
-        {
-            get
-            {
-                return count;
-            }
-            set
-            {
-                count = value;
-                tb.Text = count.ToString();
-            }
-        }
-        public static int Combo  // свойтсво для отображения фамилии в Combobox
+     
+        public static int Combo  // свойтсво для отображения знака для текущей операции
         {
             set
             {
@@ -50,7 +39,18 @@ namespace WpfApp1
                     result = firstCon+ secondCon;
                     tbResult.Text = Convert.ToString(result);
                     break;
-
+                case 1:
+                    result = firstCon - secondCon;
+                    tbResult.Text = Convert.ToString(result);
+                    break;
+                case 2:
+                    result = firstCon * secondCon;
+                    tbResult.Text = Convert.ToString(result);
+                    break;
+                case 3:
+                    result = firstCon / secondCon;
+                    tbResult.Text = Convert.ToString(result);
+                    break;
             }
         }
     }

@@ -15,13 +15,13 @@
 
 
             <StackPanel Margin ="0,10,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
-                <TextBox Margin ="12,0,10,0"  x:Name="firstNum" Width="50"></TextBox>
+                <TextBox PreviewTextInput = "OnPreviewTextInput"  Margin ="12,0,10,0"  x:Name="firstNum" Width="50"></TextBox>
                 <TextBlock x:Name="TBznak">  </TextBlock>
-                <TextBox Margin ="12,0,10,0" x:Name="secondNum" Width="50"></TextBox>
+                <TextBox PreviewTextInput = "OnPreviewTextInput"  Margin ="12,0,10,0" x:Name="secondNum" Width="50"></TextBox>
             </StackPanel>
             <Button Margin ="0,10,0,0" Name="BtnCount" Click="BtnCount_Click">Вычислить</Button>
             <GroupBox  HorizontalAlignment="Center" Header="Результат:">
-                <TextBox PreviewTextInput="OnPreviewTextInput" Width="200" Name="TbResult"/>
+                <TextBox   Width="200" Name="TbResult"/>
             </GroupBox>
         
         </StackPanel>
