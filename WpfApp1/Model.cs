@@ -28,7 +28,7 @@ namespace WpfApp1
                 tbznak.Text = dataZnak[value];
             }
         }
-        public static void operations(int i)
+        public static void operations(int i)// вычисление
         {
             double firstCon = Double.Parse(firstNum.Text);
             double secondCon = Double.Parse(secomdNum.Text);
