@@ -37,7 +37,7 @@ namespace WpfApp1
             switch (i)
             {
                 case 0:
-                    result = firstCon+ secondCon;
+                    result = firstCon + secondCon;
                     tbResult.Text = Convert.ToString(result);
                     break;
                 case 1:
@@ -50,7 +50,7 @@ namespace WpfApp1
                     break;
                 case 3:
                     result = firstCon / secondCon;
-                    if (secondCon == 0)
+                    if (secondCon == 0 || firstCon==0)
                         MessageBox.Show("Делить на ноль нельзя!!!!");
                      else  tbResult.Text = Convert.ToString(result);
                     break;
